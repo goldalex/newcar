@@ -1,0 +1,36 @@
+body {margin-top:0.2em;
+      margin-right:20px;
+      color: black;
+      background: white;
+      font-size:1em;
+      font-family: "arial", sans-serif;}
+h1, h2, h3, h4, h5, h6 {color: maroon;
+      background: white;
+      font-family: "verdana", "arial", sans-serif;
+      font-weight: bold;}
+h1 {font-size: 2em; margin-top:0em;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.2em;}
+a:link {color:navy; background: transparent; text-decoration: underline;}
+a:visited {color:gray; background: transparent;text-decoration: underline;}
+a:hover {color:white; background: navy; text-decoration: none;}
+a:active {color:red; background: transparent;text-decoration: underline;}
+
+div.first {width:47%; float:right;}
+div.second {width:47%; float:left;}
+
+p.sig {font-weight:bold; clear:both;}
+p.nav {font-weight:bold;text-align:left;
+      font-family: verdana, arial, sans-serif;
+      font-size: 1em;}
+
+pre, code {font-family: monospace; font-size: 1em;}
+
+p.recommend {display:none;}
+
+/* hide original list counter */
+ol li {display:block;} 
+
+ol > li:first-child {counter-reset: item;} /* reset counter */
+ol > li {counter-increment: item;} /* increment counter */
+ol > li:before {content:counters(item, ".") ". "; font-weight:bold;} /* print counter */
